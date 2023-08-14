@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+.nav {
+    background-color: black;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.logo-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-div img {
+    width: 100px;
+    display: flex;
+    transition: 0.5s;
+}
+
+/* hover para el logo en mobile */
+.logo-div img:hover {
+    width: 200px;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    padding: 0px 10px 10px 10px;
+    margin: 0px 5px 5px 5px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+/* hover para los links del nav */
+.nav-bar ul li a:hover {
+    background-color: brown;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.nav-bar {
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .nav{
+        display: flex;
+    }
+    .logo-div {
+        width: 25%;
+    }
+    .logo-div img {
+        width: 50%;
+    }
+    /* hover para el logo en desktop */
+    .logo-div img:hover {
+        width: 60%;
+    }
+    .nav-bar {
+        align-items: center;
+        width: 75%;
+    }
+    .nav-bar ul {
+        display: flex;
+        height: 100%;
+    }
+    .nav-bar ul li {
+        padding: 0px 30px;
+        margin: 0px 40px;
+    }
+    .nav-bar ul li a {
+        font-size: x-large;
+    }
+}
+
+/* main */
+
+.seccion-medio {
+    margin: 20px 20px;
+}
+
+.div-texto {
+    margin: 10px 5px;
+}
+
+.div-texto p {
+    text-align: center;
+}
+
+.div-foto {
+    width: 100%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-foto img {
+    width: 60%;
+    height: auto;
+    display: flex;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+/* hover imagen aumento en width y borde brown */
+.div-foto img:hover {
+    width: 70%;
+    border: 10px solid brown
+}
+
+@media (min-width: 1200px) {
+    .seccion-medio {
+        display: flex;
+        margin: 50px 20px;
+    }
+    .div-texto {
+        width: 50%;
+    }
+    .div-texto p {
+        text-align:left;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .div-foto {
+        width: 50%;
+        display: flex;
+    }
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    display: block;
+}
+
+.logo-abajo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-abajo img {
+    width: 100px;
+    display: flex;
+    transition: 0.5s;
+}
+
+/* hover para el logo de abajo en mobile */
+.logo-abajo img:hover {
+    width: 200px;
+}
+
+.nav-list-down {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-list-down li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-list-down li a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: large;
+    margin: 25px 0px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* hover para los links del nav del footer */
+footer ul li a:hover {
+    background-color: #2e3144;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+    footer {
+        background-color: black;
+        display: flex;
+    }
+    .logo-abajo {
+        width: 50%;
+    }
+    .logo-abajo img {
+        width: 150px;
+        display: flex;
+    }
+    .nav-list-down {
+        flex-direction: row;
+    }
+    .div-list-down {
+        width: 50%;
+        display: flex;
+    }
+    .div-list-down nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-list-down li a {
+        margin: 25px 60px;
+        align-items: center;
+    }
+}
