@@ -216,7 +216,7 @@ footer ul li a:hover {
         flex-direction: row;
     }
     .div-list-down {
-        width: 50%;
+        width: 100%;
         display: flex;
     }
     .div-list-down nav {
